@@ -1,5 +1,5 @@
 #!/bin/bash
-Path='/home/dan/Soubory/Skript/"antivirus"'
+Path='/usr/share/antiviRUS'
 
 if [[ -z $1 ]]; then
   echo -ne "\e[36mEnter the search directory: \e[31m"
