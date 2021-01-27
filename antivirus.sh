@@ -10,19 +10,22 @@ function motherland() {
   fi
 }
 
+function keyControl() {
+  node $Path/key.js $Path
+  if [[ $? -ne 0 ]]; then
+    echo "need key"
+    xdg-open page/index.html
+    exit 0
+  fi
+}
+
 needs=("grep"
        "node"
        "bash"
        "xdg-open"
        )
 
-node $Path/key.js $Path
-if [[ $? -ne 0 ]]; then
-  echo "need key"
-  exit 0
-fi
-
-node rpc.js &
+node $Path/rpc.js &
 
 
 echo -e "\e[97mfree antivirus virusfree hacks not russian USA approved fortnite vbucks 2021"
@@ -50,6 +53,7 @@ if [[ $selected == "b" ]]; then
 fi
 
 if [[ $selected == "a" ]]; then
+  keyControl
   echo '[' > '.dump.json'
   chmod a+rx $Path/scan.sh
   $Path/scan.sh
