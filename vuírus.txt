@@ -1,6 +1,0 @@
-rat
-malware
-virus
-not virus
-delete
-trojan
