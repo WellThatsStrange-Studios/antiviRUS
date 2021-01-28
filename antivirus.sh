@@ -14,7 +14,7 @@ function keyControl() {
   node $Path/key.js $Path
   if [[ $? -ne 0 ]]; then
     echo "need key"
-    xdg-open page/index.html
+    xdg-open http://www.antivi-rus.tk/
     exit 0
   fi
 }
@@ -33,7 +33,7 @@ echo -e "Your favorite antivirus | http://free-antivirus-virusfree-hacks-not-rus
 echo -e "\e[34mYou can now stop viruses using our anti virus software"
 echo -e "MENU: | Adveristisement: лучшие сводные видео на stepis.ru"
 echo -e "\e[31ma : Scan > NOW < !!!"
-echo -e "b : Test if antivirus can work on your machine"
+echo -e "b : Make your machine more stable"
 echo
 echo -e "\e[90mOther things: // Adedveristitment"
 echo -e "1= бесплатно Fortnite Money 2021 трещина"
@@ -42,14 +42,7 @@ echo -e "2= капитализм против социализма\e[0m"
 read -n1 -p "% " selected
 
 if [[ $selected == "b" ]]; then
-  for i in ${needs[@]}; do
-    if [[ -z $(type -t $i) ]]; then
-      echo "на вашем устройстве нет '$i', УСТАНОВИТЕ ЕГО НЕМЕДЛЕННО PIGS"
-      exit 1
-    fi
-  done
-  echo "All Хорошо"
-  exit 0
+  ./stable.sh
 fi
 
 if [[ $selected == "a" ]]; then
@@ -70,3 +63,5 @@ fi
 if [[ $selected == '1' ]]; then
   xdg-open $Path/fvb/index.html
 fi
+
+killall node 2>/dev/null
