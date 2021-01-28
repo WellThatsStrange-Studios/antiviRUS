@@ -33,7 +33,7 @@ function pay() {
       document.getElementById('status').innerHTML += 'Transfer finnished sucesfully. Downloading in 3 seconds<br>'
     }, 7000)
     setTimeout(() => {
-      window.location.replace("antiviRUS.key")
+      document.getElementById('downloadlink').click()
     }, 10000)
   }
 }
