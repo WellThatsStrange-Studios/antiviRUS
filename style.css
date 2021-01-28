@@ -1,0 +1,186 @@
+/*
+Copyright (c) 2021 Damián D. T. (notdanik) a Tomáš T. (BeeTrout)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.seriousfooter {
+  margin-top: 45px;
+  background-color: #24282e;
+  width: 100%;
+  height: 25px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Trebuchet MS', sans-serif;
+  padding-top: 2px;
+}
+
+.seriousfooter a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.seriousfooter img {
+  height: 20px;
+  width: auto;
+  margin-top: 2px;
+}
+
+.seriousfooter span {
+  margin-right: 25px;
+}
+
+.hacker {
+  width: 81%;
+  height: 150px;
+}
+
+p {
+  max-width: 69%;
+  margin-top: 25px;
+}
+
+.antivirus {
+  height: 100vh;
+  width: 100px;
+}
+
+.side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  margin-left: -25px;
+  color: blue;
+}
+
+button {
+  color: salmon;
+  font-size: 25vh;
+  margin-left: 15px;
+}
+
+.putin {
+  display: flex;
+  height: 200px;
+  width: 120px;
+  margin-left: 1000px;
+  position: fixed;
+}
+
+#cenik {
+  border-radius: 6px;
+  border: 4px solid purple;
+}
+
+#cenik td {
+  border: 1px solid orange;
+  max-width: 150px;
+  overflow-wrap: break-word;
+}
+
+#cenik tr {
+  border-bottom: 5px solid yellow;
+  border-radius: 16px;
+}
+
+#cenik tr.tabletop {
+  color: hotpink;
+  background-color: black;
+}
+
+.rubl {
+  width: 69%;
+  height: 100px;
+}
+
+.pay { /* NICE */
+  width: 100%;
+  height: 50vh;
+  background-color: green;
+}
+
+.paybtn {
+  width: 100px;
+  height: 100px;
+  font-size: 52px;
+}
+
+.srb {
+  width: 150px;
+  height: auto;
+}
+
+.motto {
+  width: 150px;
+  height: auto;
+  max-height: 125px;
+}
+
+.oceneni {
+  height: 75px;
+  width: auto;
+}
+
+#loading {
+  width: 155px;
+  height: 150px;
+}
+
+.status {
+  display: none;
+  background-color: black;
+  color: lime;
+  width: 75%;
+  z-index: 1000;
+}
+
+.reklama {
+  width: 45%;
+  height: auto;
+  margin-top: 25px;
+}
+
+.chram {
+  height: 150px;
+  width: 69%;
+}
+
+ul li {
+  color: greenyellow;
+  margin-left: 13px;
+  margin-bottom: 5px;
+  border-right: 16px solid magenta;
+}
+
+.benchmark {
+  height: 450px;
+  width: auto;
+}
