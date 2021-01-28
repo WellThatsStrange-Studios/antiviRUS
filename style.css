@@ -184,3 +184,10 @@ ul li {
   height: 450px;
   width: auto;
 }
+
+.zakaznik {
+  margin-left: 10px;
+  width: 550px;
+  height: auto;
+  border-radius: 8px;
+}
