@@ -1,5 +1,5 @@
 #!/bin/bash
-Path='/usr/share/antiviRUS'
+Path='/home/dan/Soubory/Skript/"antivirus"'
 
 if [[ -z $1 ]]; then
   echo -ne "\e[36mEnter the search directory: \e[31m"
@@ -18,7 +18,7 @@ for i in $dir/*; do
     echo "сканирую: $i"
 
     # echo "Before: $values"
-    values=$(node $Path/test.js "$i")
+    values=$(node $Path/test.js "$i" "$Path")
     # echo "After: $values"
 
     if [[ ! $values == '[]' ]]; then

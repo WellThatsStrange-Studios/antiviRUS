@@ -2,7 +2,7 @@ const fs = require('fs')
 const test = String(fs.readFileSync(String(process.argv[2])))
 
 const HJSON = require('hjson')
-const patterns = HJSON.parse(String(fs.readFileSync('searchPatterns.hjson')))
+const patterns = HJSON.parse(String(fs.readFileSync(process.argv[3] + '/searchPatterns.hjson')))
 
 var found = []
 
