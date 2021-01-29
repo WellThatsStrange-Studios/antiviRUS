@@ -25,7 +25,7 @@ needs=("grep"
        "xdg-open"
        )
 
-node $Path/rpc.js &
+# node $Path/rpc.js &
 
 
 echo -e "\e[97mfree antivirus virusfree hacks not russian USA approved fortnite vbucks 2021"

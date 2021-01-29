@@ -18,7 +18,7 @@ for i in $dir/*; do
     echo "сканирую: $i"
 
     # echo "Before: $values"
-    values=$(node $Path/test.js "$i")
+    values=$(node $Path/test.js "$i" "$Path")
     # echo "After: $values"
 
     if [[ ! $values == '[]' ]]; then
