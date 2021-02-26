@@ -13,7 +13,7 @@ function motherland() {
 function keyControl() {
   node $Path/key.js $Path
   if [[ $? -ne 0 ]]; then
-    echo "need key"
+    echo -e "\e[33mYOU NEED KEY FOR ANTIVIRUS!"
     xdg-open http://www.antivi-rus.tk/
     exit 0
   fi
